@@ -5,15 +5,31 @@
   
   <title>LLLLEE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="好好学习 天天向上">
-<meta property="og:type" content="website">
+  <meta name="description" content="建造者模式
+什么是建造者模式？
+建造者模式（Builder），将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
+
+要点：将一个复杂对象的构建与它的表示分离。另一种表述：建造者模式可以将一个产品的内部表象与产品的生成过程分割开来，从而可以使一个建造过程生成具有不同的内部表象的产品对象。
+我的理解：我觉得所谓的「将一个复杂对象的构建与它的表示分离」，就是指通过使用Builde">
+<meta property="og:type" content="article">
 <meta property="og:title" content="LLLLEE">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/04/02/建造者模式/index.html">
 <meta property="og:site_name" content="LLLLEE">
-<meta property="og:description" content="好好学习 天天向上">
+<meta property="og:description" content="建造者模式
+什么是建造者模式？
+建造者模式（Builder），将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
+
+要点：将一个复杂对象的构建与它的表示分离。另一种表述：建造者模式可以将一个产品的内部表象与产品的生成过程分割开来，从而可以使一个建造过程生成具有不同的内部表象的产品对象。
+我的理解：我觉得所谓的「将一个复杂对象的构建与它的表示分离」，就是指通过使用Builde">
+<meta property="og:updated_time" content="2017-04-04T02:49:41.983Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LLLLEE">
-<meta name="twitter:description" content="好好学习 天天向上">
+<meta name="twitter:description" content="建造者模式
+什么是建造者模式？
+建造者模式（Builder），将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
+
+要点：将一个复杂对象的构建与它的表示分离。另一种表述：建造者模式可以将一个产品的内部表象与产品的生成过程分割开来，从而可以使一个建造过程生成具有不同的内部表象的产品对象。
+我的理解：我觉得所谓的「将一个复杂对象的构建与它的表示分离」，就是指通过使用Builde">
   
     <link rel="alternate" href="/atom.xml" title="LLLLEE" type="application/atom+xml">
   
@@ -62,9 +78,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-建造者模式" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-建造者模式" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/04/02/建造者模式/" class="article-date">
   <time datetime="2017-04-02T12:46:18.925Z" itemprop="datePublished">2017-04-02</time>
@@ -228,166 +242,19 @@ public class BuilderTest{
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-daimayouhua" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/04/02/daimayouhua/" class="article-date">
-  <time datetime="2017-04-02T00:55:05.997Z" itemprop="datePublished">2017-04-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="代码结构优化"><a href="#代码结构优化" class="headerlink" title="代码结构优化"></a>代码结构优化</h1><hr>
-<p>这是关于代码结构的优化。<br>我写了这样一段代码：</p>
-<pre>
-public boolean isExternalStorageWritable(){
-        String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state)) {
-            return true;
-        }
-        return false;
-    }
-</pre>
+  
+    <a href="/2017/04/02/daimayouhua/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-<p>然后Android Studio提示我说，</p>
-<blockquote>
-<p>‘if’ statement can be simplified「more…」</p>
-</blockquote>
-<p>点击more…，它给了我一个生动形象的例子。<br>然后我就明白了。<br>下面是修改之后的代码：</p>
-<pre>
-public boolean isExternalStorageWritable(){
-        String state = Environment.getExternalStorageState();
-        return Environment.MEDIA_MOUNTED.equals(state);
-    }
-</pre>
-
-<hr>
-<p>That’s all.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/02/daimayouhua/" data-id="cj12y6gyj0001kobxjssjvbtc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-my-post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/28/my-post/" class="article-date">
-  <time datetime="2017-03-28T12:35:28.000Z" itemprop="datePublished">2017-03-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/28/my-post/">my post</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="that’s-all"><a href="#that’s-all" class="headerlink" title="that’s all!"></a>that’s all!</h3><p><code>class LocalCacheUtils{
-    private static final String CACHE_PATH = Environment.getExternalStorageDirectory.getAbsolutePath()+&quot;xxapp&quot;;
-}</code></p>
-<p>###无序列表</p>
-<ul>
-<li>第一点</li>
-<li>第二点</li>
-<li>第三点<br>###有序列表</li>
-</ul>
-<ol>
-<li>A</li>
-<li>B</li>
-<li>C</li>
-<li>D</li>
-</ol>
-<blockquote>
-<p>这里是引用</p>
-</blockquote>
-<p><a href="http://www.baidu.com" target="_blank" rel="external">Baidu</a></p>
-<p>插入图片<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b10000_10000&amp;sec=1490788943&amp;di=46459909122eb29980410541dc7f13cf&amp;src=http://picture.youth.cn/xwjd/201409/W020140923408392721796.jpg" alt="Icon"></p>
-<p><strong>这里是粗体文字</strong>  </p>
-<p><em>这里是斜体字</em></p>
-<hr>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/28/my-post/" data-id="cj12y6gyw0002kobxlxok6fw3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/28/hello-world/" class="article-date">
-  <time datetime="2017-03-28T09:59:54.751Z" itemprop="datePublished">2017-03-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一个新的post"><a href="#创建一个新的post" class="headerlink" title="创建一个新的post"></a>创建一个新的post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/28/hello-world/" data-id="cj12y6gy90000kobx1h34xjn3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
